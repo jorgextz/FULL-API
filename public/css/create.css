@@ -6,13 +6,11 @@ body {
     scroll-behavior: smooth;
 }
 
-.register_container {
-    display: flex;
-    height: 500px;
-    align-items: center;
-    justify-content: space-around;
+h2{
+    font-size: 2rem;
 }
 
-.titulo{
-    text-align: center;
+.form-filter a{
+    text-decoration: none;
 }
+

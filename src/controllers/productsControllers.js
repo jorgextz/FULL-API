@@ -1,4 +1,4 @@
-const Product = require('../database/models/Product')
+const Product = require('../database/models/User')
 
 const controller = {
     listar: async(req,res)=>{

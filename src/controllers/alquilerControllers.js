@@ -1,9 +1,10 @@
-const Alquiler = require('../database/models/Alquiler')
+const Alquiler = require('../database/models/Alquiler');
 
-const controlleralquiler = {
+const controller = {
+
     listar: async(req,res)=>{
-        let Alquiler = await Alquiler.find({});
-        res.status(200).json(Alquiler);
+        let alquiler = await Alquiler.find({});
+        res.status(200).json(alquiler);
     },
 
     alquilar: async(req,res)=>{
@@ -14,7 +15,6 @@ const controlleralquiler = {
                 hour : req.body.hour,
                 user : req.body.user,
                 };
-            console.log(req);
             let alquilerData = await Alquiler.create(alquiler);
             res.status(201).json(alquilerData);
         }
@@ -26,8 +26,20 @@ const controlleralquiler = {
                 res.status(500).json({message: 'Internal Server Error!'})
             }
         }
+    },
+
+        editar: async(req,res)=>{
+            let Alquiler = await Alquiler.find({});
+            res.status(200).json(Alquiler);
+    },
+        buscar: async(req,res) => {
+            console.log(req.query);
+            let canchas = await Alquiler.find({date: req.query.fecha});
+            res.status(200).json(canchas);
     }
+
+
 
 };
 
-module.exports = controlleralquiler; 
+module.exports = controller; 

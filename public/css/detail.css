@@ -1,0 +1,28 @@
+body {
+    font-family: 'Poppins', Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+h1{
+    text-align: center;
+}
+
+.listado-container {
+    display: flex;
+    flex-direction: column;
+    background-color: aquamarine;
+    margin: auto;
+    align-items: center;
+    width: 30%;
+}
+
+.listado-container div{
+    margin: 1rem 0;
+    border-bottom: solid 1px black;
+    text-align: center;
+}
+
+
+

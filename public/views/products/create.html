@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="create.js"></script>
+    <script src="../../js/create.js"></script>
+    <link rel="stylesheet" href="../../css/create.css">
     <title>Create</title>
+
 </head>
 <body>
-    <h1>SELECIONA TU CANCHA</h1>
+    <h1 class="h1-tittle">SELECIONA TU CANCHA</h1>
     <div class="alquiler_cancha">
         <form class="form1" action="" onsubmit="return enviar(this)">
             <label for="">Cancha</label>
@@ -26,9 +28,17 @@
                 <option value="14">14</option>
                 <option value="15">15</option>
             </select>
-        <button type="submit">ALQUILAR</button>
+            <button type="submit">ALQUILAR</button>
         </form>
 
+    </div>
+<h2>CANCHAS OCUPADAS</h2>
+    <div>
+        <form class="form-filter" action="" onsubmit="return filtrar(this)">
+            <label for="">Fecha</label>
+            <input type="date" name="date">
+            <button type="submit">BUSCAR</button>
+        </form>
     </div>
     
 </body>

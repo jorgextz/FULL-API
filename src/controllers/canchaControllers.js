@@ -1,6 +1,6 @@
 const Cancha = require('../database/models/Cancha')
 
-const controllercanchas = {
+const controller = {
     listar: async(req,res)=>{
         let Canchas = await Cancha.find({});
         res.status(200).json(Canchas);
@@ -8,4 +8,4 @@ const controllercanchas = {
 
 };
 
-module.exports = controllercanchas; 
+module.exports = controller; 
