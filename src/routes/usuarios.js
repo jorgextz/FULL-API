@@ -1,14 +1,12 @@
 const express = require ('express');
 const router = express.Router();
-const controller = require('../controllers/productsControllers');
-const controllercanchas = require('../controllers/canchaControllers');
-const controlleralquiler = require('../controllers/alquilerControllers');
+const controllerUsuario = require('../controllers/userController');
 const upload = require ('../middlewares/multer');
 
 
 
-//// RUTAS A CONTROLLERS////
-
+// RUTAS A CONTROLLERS////
+router.post('/crear', controllerUsuario.crear);
 
 
 

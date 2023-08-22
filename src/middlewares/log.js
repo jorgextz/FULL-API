@@ -3,8 +3,11 @@ const fs = require('fs');
 const express = require('express');
 const app = express();
 
+
 const log = () => { 
-const rutaLog = path.resolve(__dirname, './data/log.txt');
+
+const rutaLog = path.resolve(__dirname, '../data/log.txt');
+
 app.use('/',(req, res, next)=> {
     fs.appendFile(rutaLog, req.originalUrl+'\n',(error)=>{
         if(error) {

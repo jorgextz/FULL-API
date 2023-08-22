@@ -3,8 +3,8 @@ const mongoose = require('mongoose');
 
 const alquilerSchema = new mongoose.Schema({
     
-    cancha: {type: String, required: true},
-    date: {type: Date, required: true},
+    cancha: {type: Number, required: true},
+    date: {type: String, required: true},
     hour: {type: Number, required: true},
     user: {type: String, required: true}
     

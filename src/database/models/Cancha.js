@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 
 const canchaSchema = new mongoose.Schema({
     
-    name: {type: String, required: true},
+    cancha: {type: Number, required: true},
     
 });
 

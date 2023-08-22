@@ -3,8 +3,12 @@ const Alquiler = require('../database/models/Alquiler');
 const controller = {
 
     listar: async(req,res)=>{
-        let alquiler = await Alquiler.find({});
-        res.status(200).json(alquiler);
+        try{
+            let canchasAlquiladas = await Alquiler.find({});
+            res.status(200).json(canchasAlquiladas); }
+            catch (error){
+                console.log('Ha ocurrido un error: '+error);
+            }
     },
 
     alquilar: async(req,res)=>{
@@ -27,14 +31,26 @@ const controller = {
             }
         }
     },
+    editar: async(req,res)=>{
+           try{  
+            let alquilerData = {
+                cancha: req.body.cancha,
+                date: req.body.fecha,
+                hour: req.body.hora,
+                user: req.body.user, 
+            }
+            let actualizarAlquiler = await Alquiler.findByIdAndUpdate(req.params.id,alquilerData)
 
-        editar: async(req,res)=>{
-            let Alquiler = await Alquiler.find({});
-            res.status(200).json(Alquiler);
+            res.status(200).json(actualizarAlquiler);
+            }
+            
+            catch (error) {
+                console.log('Ha ocurrido un error: '+ error);
+            }
     },
-        buscar: async(req,res) => {
+    buscar: async(req,res) => {
             console.log(req.query);
-            let canchas = await Alquiler.find({date: req.query.fecha});
+            let canchas = await Alquiler.find({date: req.body.fecha,cancha: req.body.cancha});
             res.status(200).json(canchas);
     }
 

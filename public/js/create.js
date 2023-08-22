@@ -3,7 +3,6 @@ fetch("http://127.0.0.1:3002/canchas/listar")
     return respuesta.json();
 })
 .then(function(informacion){
-    console.log(informacion);
     let canchas = document.getElementById("cancha");
     informacion.forEach(cancha => {
         let opt = document.createElement("option");

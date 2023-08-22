@@ -1,18 +1,30 @@
 const path = require('path');
+const fs = require('fs');
 const express = require('express');
 const app = express();
 const canchas = require('./routes/canchas');
 const alquileres = require('./routes/alquileres');
 const usuarios = require('./routes/usuarios')
 const connectDB = require('./database/connect');
-const logRegister = require ('./middlewares/log');
+// const logRegister = require ('./middlewares/log');
 
 
 /////CONEXION A DB////
 connectDB();
 
-//////CONFIGURACIONES//////    
-logRegister();
+//////CONFIGURACIONES//////   
+const rutaLog = path.resolve(__dirname, './data/log.txt');
+
+app.use('/',(req, res, next)=> {
+    fs.appendFile(rutaLog, req.originalUrl+'\n',(error)=>{
+        if(error) {
+            console.log('Ha ocurrido un error al procesar los datos!')
+        } else {
+            console.log('Los datos fueron procesados correctamente')
+        }
+    })      
+    next();
+   });
 app.use(function (req, res, next) {
 
   // Website you wish to allow to connect
@@ -34,6 +46,7 @@ app.use(function (req, res, next) {
 app.use(express.static(path.resolve(__dirname,'../public')));
 app.use(express.urlencoded({extended:false}));
 app.use(express.json());
+// logRegister();
 
 //////// RUTAS //////////
 app.use('/alquiler', alquileres);

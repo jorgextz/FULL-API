@@ -4,10 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/ed489b5423.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../../css/login.css">
+
+    <script src="../../js/register.js" defer></script>
     <title>Inicio</title>
 </head>
 <body>
-    <h1>Aca te Registras</h1>
+    <form action="" class="formulario" onsubmit="return enviar(this)">
+        <h1>Registro</h1>
+        <div class="contenedor">
+            <div class="input-contenedor" >
+                <i class="fa-solid fa-envelope icon"></i>
+                <input name="email" id="input-email" type="text" placeholder="Correo Electronico">
+            </div>
+            <div class="input-contenedor" >
+                <i class="fa-solid fa-user icon"></i>
+                <input id="input-nombre" type="text" placeholder="Nombre">
+            </div>
+            <div class="input-contenedor" >
+                <i class="fa-solid fa-phone icon"></i>
+                <input id="input-telefono" type="tel" placeholder="Telefono">
+            </div>
+            <div class="input-contenedor">
+                <i class="fa-solid fa-key icon"></i>
+                <input id="input-password" type="password" placeholder="Contraseña">
+            </div>
+            <div>
+                <input type="submit" value="Registrate" class="button">
+                <p>Al registrarte, aceptas nuestras condiciones de uso y política de privacidad</p>
+                <p>¿ Ya tienes cuenta? <a class="link" href="./login.html">Iniciar Sesion</a></p>
+            </div>
+        </div>
+    </form> 
     
 </body>
 </html>
