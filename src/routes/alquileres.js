@@ -1,7 +1,7 @@
 const express = require ('express');
 const router = express.Router();
 const controller = require('../controllers/alquilerControllers');
-const log = require('../middlewares/log.js')
+const log = require('../middlewares/logRegister.js')
 
 
 
