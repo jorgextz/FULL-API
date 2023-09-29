@@ -1,0 +1,123 @@
+[{
+  "_id": {
+    "$oid": "650cd5b8bf6513d3a2ecd96c"
+  },
+  "cancha": 3,
+  "day": "lunes",
+  "hour": 9,
+  "user": "username@gmail.com",
+  "reserveDay": "22/09/2023",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "651372febc48910573d0dcfa"
+  },
+  "cancha": 3,
+  "day": "lunes",
+  "hour": 9,
+  "user": "username@gmail.com",
+  "createdAt": {
+    "$date": "2023-09-27T00:10:38.519Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-27T00:10:38.519Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6515eee1ba3e93bc98c7b4c4"
+  },
+  "cancha": 1,
+  "day": "martes",
+  "hour": 12,
+  "user": "jorgeleo.marcano@gmail.com",
+  "createdAt": {
+    "$date": "2023-09-28T21:23:45.686Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-28T21:23:45.686Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6515ff8ef7b79cee9fd3efc3"
+  },
+  "cancha": 1,
+  "day": "lunes",
+  "hour": 21,
+  "user": "eduardo@gmail.com",
+  "createdAt": {
+    "$date": "2023-09-28T22:34:54.654Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-28T22:34:54.654Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65160107f7b79cee9fd3efc7"
+  },
+  "cancha": 1,
+  "day": "martes",
+  "hour": 12,
+  "user": "joni@gmail.com",
+  "createdAt": {
+    "$date": "2023-09-28T22:41:11.277Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-28T22:41:11.277Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65160153f7b79cee9fd3efcb"
+  },
+  "cancha": 2,
+  "day": "miercoles",
+  "hour": 13,
+  "user": "monica@gmail.com",
+  "createdAt": {
+    "$date": "2023-09-28T22:42:27.631Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-28T22:42:27.631Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "651610c8f7b79cee9fd3efdb"
+  },
+  "cancha": 2,
+  "day": "lunes",
+  "hour": 11,
+  "user": "uri@gmail.com",
+  "createdAt": {
+    "$date": "2023-09-28T23:48:24.636Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-28T23:48:24.636Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65161ad6fc6aeef4ebbe46a9"
+  },
+  "cancha": 1,
+  "day": "lunes",
+  "hour": 16,
+  "user": "diana@gmail.com",
+  "createdAt": {
+    "$date": "2023-09-29T00:31:18.848Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-29T00:31:18.848Z"
+  },
+  "__v": 0
+}]
