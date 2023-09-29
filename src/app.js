@@ -18,7 +18,7 @@ app.use(express.static(path.resolve(__dirname,'../public')));
 app.use(express.urlencoded({extended:false}));
 app.use(express.json());
 app.use(cors());
-logRegister();
+app.use('/',logRegister);
 
 //////// RUTAS //////////
 app.use('/alquiler', alquileres);

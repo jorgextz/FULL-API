@@ -217,6 +217,18 @@ const controller = {
         }
     },
 
+    editar: async (req, res) => {
+        try {
+        
+            let Canchas = await Cancha.findByIdAndUpdate(req.params.id,);
+            res.status(200).json(Canchas);
+        } catch {
+            (error) => {
+                console.log(error);
+            }
+        }
+    }
+
 };
 
 module.exports = controller; 

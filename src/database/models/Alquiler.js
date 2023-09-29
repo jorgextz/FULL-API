@@ -7,8 +7,9 @@ const alquilerSchema = new mongoose.Schema({
     day: {type: String, required: true},
     hour: {type: Number, required: true},
     user: {type: String, required: true},
-    reserveDay: {type: String, required: true} 
     
+}, {
+    timestamps:true
 });
 
 const Alquiler = mongoose.model('Alquiler',alquilerSchema);
